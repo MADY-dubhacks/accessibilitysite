@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Accessability Site</title>
+	<meta charset="utf-8">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+	<link rel="icon" type="image/gif" href="favicon.png" sizes="16x16" />
+	<link rel="stylesheet" href="../static/style.css" />
+</head>
+
+<body>
+	<div class = "header">
+		<div class = "features">
+			<div id = "wrapper"> 
+				<i class = "fa fa-file-audio" id = "speak" title = "Read article"></i>
+				<i class="fa fa-audio-description" id = "caption-speak" title = "Listen to Caption"></i>
+				<i class = "fa fa-font" title = "Adjust font"></i>
+				<div class = "fonts">
+					<i class = "fa fa-plus" id = "inc-font" title = "Increase font"></i>
+					<i class = "fa fa-minus" id = "dec-font" title = "Decrease font"></i>
+				</div>
+				<div class = "theme">
+					<i class = "fa fa-moon" id = "darkMode" class = "themes" title = "Enable dark mode"></i> 
+					<i class = "fas fa-sun" id = "lightMode" class = "themes" title = "Enable light mode"></i>
+				</div>
+			</div>
+		</div>
+			<div class = "searchbar"> 
+				<form action="{{ url_for('serve_article') }}" method="post">
+					<input type = "text" placeholder="Enter URL here..." name = "URL" id = "searching">
+					<button type = "submit"><i class = "fa fa-search fa-rotate-vertical" id = "search"></i></button>
+				</form>
+			
+			</div>
+		
+	</div>
+	<hr>
+	<div class = "body-container"> 
+		<div class = "float-left"> 
+			<div id ="big-logo"> <img src = "../static/logo.png"> </div>
+			<div id ="big-logo-dt"> <img src = "../static/logo_d.png"></div>
+		</div>
+		<div class = "float-right-landing">
+			<div id = "article-title">Welcome.</div>
+			<div id = "main-text">
+				<h3>Make all your favorite websites simple and easy to read. </h3>
+				<h3>To get started:</h3>
+					<ol> 1. Copy the URL link from the website you would like to view (CTRL + C) </ol>
+					<ol> 2. Paste the link into the search bar (CTRL + V) </ol>
+					<ol >3. Click the search icon and view your site! </ol>
+			</div>
+		</div>
+	</div>
+
+	<script type = "text/javascript" src = "../static/feature.js"></script>
+	
+	<script type="text/javascript" src = "../static/carousel.js"></script>	
+
+
+
+
+</body>
+
+</html>
