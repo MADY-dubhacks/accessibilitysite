@@ -37,12 +37,23 @@
 		
 	</div>
 	<hr>
-	<div class = "body-container"> 
+	<center>
+	<div id = "main-body-np"> 
+		<div class = "wrap-page">
+		<div id = "article-title-np" > {{ title }} </div>
+		<div id = "main-text-np"> {{ text }} </div>
+		</div>
+	</div>
+	</center>
+	<div id = "body-container"> 
 		<div class = "float-left"> 
-			<center><div class = "page-logo"><img src = "{{ icon }}"></div></center>
+			<center><div class = "background-box">
+				<div class = "page-logo">
+					<img src = "{{ icon }}">
+				</div>
+			</div></center>
 			<center>
 			<div class = "pictures">
-		
 				<i class="fas fa-arrow-circle-left" id = "previous"></i>
 				{% if images|length > 0 %}
  					{% for i in range(images|length) %}
@@ -74,7 +85,7 @@
 
 	<script type = "text/javascript" src = "../static/feature.js"></script>
 	<script type = "text/javascript" src = "../static/carousel.js"></script>
-		
+	<script type = "text/javascript" src = "../static/pics_check.js"></script>
 
 
 </body>

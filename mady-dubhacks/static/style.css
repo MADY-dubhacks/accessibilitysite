@@ -11,7 +11,7 @@ p {
 
 .header {
 	display: flex;
-	margin: 2em;
+	margin: 1.25em;
 
 }
 
@@ -113,6 +113,19 @@ hr {
 	height: max-height;
 }
 
+#main-body {
+	font-size: 1em;
+	float:right;
+	padding: 1em;
+	margin: 2em;
+	width: 50%;
+	border: .1em solid;
+	border-color: black;
+	border-radius: .2em;
+	overflow-y: auto;
+	height: max-height;
+}
+
 .float-right-landing {
 	font-size: 1em;
 	float:right;
@@ -132,6 +145,18 @@ hr {
 	font-size: 2em;
 }
 
+#article-title-np {
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: .5em;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#main-body-np {
+	display:none;
+}
+
 #main-text {
 	float:left;
 	height: 250px;
@@ -139,7 +164,13 @@ hr {
 	overflow-y: auto;
 }
 
-.body-container {
+#main-text-np {
+	height: 250px;
+	font-size: 1em;
+	overflow-y: auto;
+}
+
+#body-container {
 	display: flex;
 }
 
