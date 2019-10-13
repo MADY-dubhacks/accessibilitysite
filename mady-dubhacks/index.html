@@ -40,25 +40,20 @@
 			<center>
 			<div class = "pictures">
 				<i class="fas fa-arrow-circle-left" id = "previous"></i>
-				<div class="mySlides fade">
-                    <img src= "static/test2.jpeg" style="width:90%">
-                    <figcaption> This is a caption 1</figcaption>
-                </div>
-                <div class="mySlides fade">
-                    <img src="static/test3.png" style="width:90%">
-                    <figcaption> This is a caption 2</figcaption>
-                </div>
-                <div class="mySlides fade">
-                    <img src= "static/test2.jpeg" style="width:90%">
-                    <figcaption> This is a caption 1</figcaption>
-                </div>
-                <i class="fas fa-arrow-circle-right" id = "next"></i>
-            </div>
-            </center>
+				{% if images.length > 0 %}
+ 					{% for i in images.length %}
+			        <div class = "mySlides fade">
+                    <img src = "{{images[i]}}" style="width:90%">
+                    <figcaption>{{caption[i]}}</figcaption>
+                	</div>
+			    {% endfor %}
+			</div>
+			</center>
             <div>
-            	<span class="counter"></span> 
-				<span class="counter"></span> 
-				<span class="counter"></span> 
+            	{% if images.length > 0 %}
+ 					{% for i in images.length %}
+			        <span class = "counter"></span>
+			    	{% endfor %}
             </div>
 		</div>
 		<div class = "float-right">
