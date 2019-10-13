@@ -38,29 +38,19 @@
 	<hr>
 	<div class = "body-container"> 
 		<div class = "float-left"> 
-			<center><div class = "page-logo"><div id = "mount"></span><img src = "static/test.png"></div></center>
-			<center>
-			<div class = "pictures">
-				<i class="fas fa-arrow-circle-left" id = "previous"></i>
-				{% if images.length > 0 %}
- 					{% for i in images.length %}
-			        <div class = "mySlides fade">
-                    <img src = "{{images[i]}}" style="width:90%">
-                    <figcaption>{{caption[i]}}</figcaption>
-                	</div>
-			    	{% endfor %}
-			</div>
-			</center>
-            <div>
-            	{% if images.length > 0 %}
- 					{% for i in images.length %}
-			        <span class = "counter"></span>
-			    	{% endfor %}
-            </div>
+			<div class ="big-logo"> <img src = "static/logo.png"> </div>
 		</div>
-		<div class = "float-right">
-			<div id = "article-title" src = "{{title}}"></div>
-			<div id = "main-text"  src = "{{text}}"></div>
+		<div class = "float-right-landing">
+			<div id = "article-title">Welcome.</div>
+			<div id = "main-text">
+				<h3>Make all your favorite websites simple and easy to read. 
+				To get started:</h3>
+				
+					<ol> 1. Copy the URL link from the website you would like to view (CTRL + C) </ol>
+					<ol> 2. Paste the link into the search bar (CTRL + V) </ol>
+					<ol >3. Click the search icon and view your site! </ol>
+				
+			</div>
 		</div>
 	</div>
 
