@@ -60,9 +60,17 @@ function speak(){
 }
 
 function captionSpeak(){
-	var curCaption = document.getElementById("cur-caption");
+	var pics = document.getElementsByClassName("mySlides");
+	var p_length = pics.length;
+	var car = 0;
+	for (i = 0; i < p_length; i++) {
+		if (pics[i].style.display == "block") {
+			car = document.getElementsByTagName("figcaption")[i].innerHTML;
+		}
+	}
+
 	var intro = new SpeechSynthesisUtterance("Image Caption");
-	var caption = new SpeechSynthesisUtterance(curCaption.innerHTML);
+	var caption = new SpeechSynthesisUtterance(car);
 	
 	window.speechSynthesis.speak(intro);
 	window.speechSynthesis.speak(caption);
