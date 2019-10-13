@@ -14,5 +14,5 @@ Features:
 5. Dark/light mode
 6. Image captioning
 
-Find our website live at: http://mady.pythonanywhere.com/serve_article
+Find our website live at: http://mady.pythonanywhere.com/
  
