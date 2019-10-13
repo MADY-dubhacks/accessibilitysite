@@ -13,12 +13,11 @@ function darkModeTheme() {
 	document.getElementById("wrapper").style.borderColor = "rgb(224,224,224)";
 	document.getElementById("main-text").style.borderColor = "rgb(224,224,224)";
 	document.getElementById("searching").style.backgroundColor = "rgb(224,224,224)";
-	document.getElementById("float-right").style.borderColor = "rgb(224,224,224)";
 	document.getElementById("darkMode").style.display = "none";
-	if (window.location.pathname == '/landing.html') {
-		document.getElementById("big-logo-dt").style.display = "inline-block";
+	if (document.getElementById('big-logo') != null ) {
+      	document.getElementById("big-logo-dt").style.display = "inline-block";
 		document.getElementById("big-logo").style.display = "none";
-	}
+    }
 	document.getElementById("lightMode").style.display = "inline";
 	document.body.style.backgroundColor = "rgb(24,24,24)";
 }
@@ -27,13 +26,11 @@ function lightModeTheme() {
 	document.body.style.color = "black";
 	document.getElementById("wrapper").style.borderColor = "black";
 	document.getElementById("main-text").style.borderColor = "black";
-	document.getElementById("float-right").style.borderColor = "black";
 	document.getElementById("lightMode").style.display = "none";
 	document.getElementById("searching").style.backgroundColor = "white";
-
-	if (window.location.pathname == '/landing.html') {
-		document.getElementById("big-logo-dt").style.display = "inline-block";
-		document.getElementById("big-logo").style.display = "none";
+	if (document.getElementById('big-logo') != null ){
+		document.getElementById("big-logo-dt").style.display = "none";
+		document.getElementById("big-logo").style.display = "inline-block";
 	}
 	document.getElementById("darkMode").style.display = "inline";
 	document.body.style.backgroundColor = "white";
